@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "semantic-chunker-langchain"
-version = "0.1.0"
+version = "0.1.1"
 description = "Token-aware, LangChain-compatible semantic chunker with PDF and layout support"
 authors = ["Prajwal Shivaji Mandale <prajwal.mandale333@gmail.com>","Sudhnwa Ghorpade <sudhnwa.ghorpade@gmail.com>"]
 license = "MIT"
