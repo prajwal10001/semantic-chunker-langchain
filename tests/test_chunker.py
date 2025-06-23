@@ -1,5 +1,5 @@
 from langchain_core.documents import Document
-from langchain_semantic_chunker import SemanticChunker
+from semantic_chunker_langchain import SemanticChunker
 
 def test_chunking_basic():
     doc = Document(page_content="A.\n\nB.\n\nC.", metadata={})

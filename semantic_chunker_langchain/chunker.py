@@ -1,7 +1,7 @@
 # === langchain_semantic_chunker/chunker.py ===
 from langchain_core.documents import Document
 from langchain_text_splitters import TextSplitter
-from langchain_semantic_chunker.utils import estimate_token_count
+from semantic_chunker_langchain.utils import estimate_token_count
 import re
 
 class SemanticChunker(TextSplitter):
