@@ -1,6 +1,6 @@
 import pdfplumber
 from langchain_core.documents import Document
-from langchain_semantic_chunker import SemanticChunker
+from semantic_chunker_langchain import SemanticChunker
 
 PDF_PATH = "ml.pdf"
 OUTPUT_TXT = "output.txt"
@@ -32,4 +32,4 @@ if __name__ == "__main__":
     docs = extract_text(PDF_PATH)
     chunks = chunk_documents(docs)
     write_to_txt(chunks, OUTPUT_TXT)
-    print(f"✅ PDF content chunked and saved to {OUTPUT_TXT}")
+    print(f" PDF content chunked and saved to {OUTPUT_TXT}")

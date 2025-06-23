@@ -1,9 +1,9 @@
 # === examples/retriever_demo.py ===
 import os
-os.environ["OPENAI_API_KEY"] = ""
+os.environ["OPENAI_API_KEY"] = "add your api key here"
 
 from langchain_core.documents import Document
-from langchain_semantic_chunker.chunker import SemanticChunker, SimpleSemanticChunker
+from semantic_chunker_langchain.chunker import SemanticChunker, SimpleSemanticChunker
 # from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS

@@ -3,13 +3,13 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from langchain_core.documents import Document
-from langchain_semantic_chunker.chunker import SimpleSemanticChunker
+from semantic_chunker_langchain.chunker import SimpleSemanticChunker
 from openai import AzureOpenAI
 import pdfplumber
 
 # === 1. Setup Azure OpenAI ===
 client = AzureOpenAI(
-    api_key="",
+    api_key="add your api credentials here",
     api_version="",
     azure_endpoint=""
 )

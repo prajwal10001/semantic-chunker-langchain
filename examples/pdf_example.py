@@ -1,5 +1,5 @@
 from langchain_core.documents import Document
-from langchain_semantic_chunker import SemanticChunker
+from semantic_chunker_langchain import SemanticChunker
 
 doc = Document(
     page_content="This is the first paragraph.\n\nThis is the second, longer paragraph with more content and detail.\n\nA third paragraph for testing.",
