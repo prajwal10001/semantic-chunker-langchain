@@ -9,9 +9,9 @@ import pdfplumber
 
 # === 1. Setup Azure OpenAI ===
 client = AzureOpenAI(
-    api_key="CAKWUJNrbQ7RRiog8zMDW8OlkixsvTOFInxIyvXQYHacZs2No1RxJQQJ99BCACYeBjFXJ3w3AAABACOGRBYm",
-    api_version="2025-01-01-preview",
-    azure_endpoint="https://piestudyaiservices.openai.azure.com/"
+    api_key="",
+    api_version="",
+    azure_endpoint=""
 )
 
 deployment_name = "gpt-35-turbo"

@@ -1,6 +1,6 @@
 # === examples/retriever_demo.py ===
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 from langchain_core.documents import Document
 from langchain_semantic_chunker.chunker import SemanticChunker, SimpleSemanticChunker
