@@ -20,7 +20,7 @@ A **token-aware**, **LangChain-compatible** chunker that splits text (from PDF, 
 
 ---
 
-## 📦 Installation
+## 📆 Installation
 
 ```bash
 pip install semantic-chunker-langchain
@@ -40,6 +40,7 @@ semantic-chunker sample.pdf --txt chunks.txt --json chunks.json
 
 ### 🔸 From Code
 
+```python
 from semantic_chunker_langchain.chunker import SemanticChunker, SimpleSemanticChunker
 from semantic_chunker_langchain.extractors.pdf import extract_pdf
 from semantic_chunker_langchain.outputs.formatter import write_to_txt
@@ -57,7 +58,7 @@ write_to_txt(chunks, "output.txt")
 # Using SimpleSemanticChunker
 simple_chunker = SimpleSemanticChunker(model_name="gpt-3.5-turbo")
 simple_chunks = simple_chunker.split_documents(docs)
-
+```
 
 ### 🔸 Convert to Retriever
 
@@ -68,7 +69,7 @@ retriever = chunker.to_retriever(chunks, embedding=OpenAIEmbeddings())
 
 ---
 
-## 🧪 Testing
+## 📊 Testing
 
 ```bash
 poetry run pytest tests/
