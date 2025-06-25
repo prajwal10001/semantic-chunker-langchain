@@ -40,13 +40,14 @@ semantic-chunker sample.pdf --txt chunks.txt --json chunks.json
 
 ### 🔸 From Code
 
-```python
-from langchain_semantic_chunker.chunker import SemanticChunker, SimpleSemanticChunker
-from langchain_semantic_chunker.extractors.pdf import extract_pdf
-from langchain_semantic_chunker.outputs.formatter import write_to_txt
+from semantic_chunker_langchain.chunker import SemanticChunker, SimpleSemanticChunker
+from semantic_chunker_langchain.extractors.pdf import extract_pdf
+from semantic_chunker_langchain.outputs.formatter import write_to_txt
 
 # Extract
 docs = extract_pdf("sample.pdf")
+
+# Using SemanticChunker
 chunker = SemanticChunker(model_name="gpt-3.5-turbo")
 chunks = chunker.split_documents(docs)
 
@@ -56,7 +57,7 @@ write_to_txt(chunks, "output.txt")
 # Using SimpleSemanticChunker
 simple_chunker = SimpleSemanticChunker(model_name="gpt-3.5-turbo")
 simple_chunks = simple_chunker.split_documents(docs)
-```
+
 
 ### 🔸 Convert to Retriever
 
