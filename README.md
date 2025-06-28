@@ -1,6 +1,7 @@
 # Semantic Chunker for LangChain
 
-A **token-aware**, **LangChain-compatible** chunker that splits text (from PDF, markdown, or plain text) into semantically coherent chunks while respecting model token limits.
+Hitting limits on passing the larger context to your limited character token limit llm model not anymore this chunker solves the problem
+It is a **token-aware**, **LangChain-compatible** chunker that splits text (from PDF, markdown, or plain text) into semantically coherent chunks while respecting model token limits.
 
 ---
 
